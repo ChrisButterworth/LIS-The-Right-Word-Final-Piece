@@ -38,6 +38,9 @@ Posts were classified as rage bait (roughly 60%) or control (roughly 40%) based 
 
 Each record included: post text (title), comments, votes, subreddit, URL. Usernames were not recorded following privacy protocols for public social media research.
 
+The full methodology for scraping the platform can be found within the [Git repo](https://github.com/ChrisButterworth/LIS-The-Right-Word-Final-Piece/blob/main/Step%201%20-%20Scraping.ipynb).
+
+
 ### Quantitative Analysis
 
 Computational analysis employed Python with pandas, NLTK, vaderSentiment, scipy, and visualization libraries. Five feature categories were extracted: (1) interrogative structures (presence, count, type via regex), (2) sentiment (VADER compound scores, -1 to +1 scale), (3) presupposition triggers following Levinson's (1983) taxonomy (factive verbs, change-of-state verbs, temporal markers, universal quantifiers—pattern-matched with word boundaries), (4) text properties (length), (5) engagement metrics (comments as primary outcome).
@@ -51,7 +54,11 @@ Analysis followed Gricean (1975) and presupposition theory frameworks (Stalnaker
 
 ### Limitations
 
-Corpus size (n = 1200) limits statistical power for weak effects but remains adequate for moderate-to-strong patterns and qualitative analysis. Classification involved researcher judgment without formal inter-rater reliability, mitigated through explicit criteria and ambiguous case exclusion. Reddit-specific findings may not generalize to other platforms. Despite constraints, the corpus provides ecologically valid examples, and mixed-methods triangulation strengthens confidence in conclusions.
+Corpus size (n = 1200) limits statistical power for weak effects but remains adequate for moderate-to-strong patterns and qualitative analysis. Reddit-specific findings may not generalize to other platforms.
+
+Another limitation is that I initially used AI to help classify the corpus to help with speed before manually reviewing to fix any classification or output errors - this is where human error could have played a part in the analysis too.
+
+Despite constraints, the corpus provides ecologically valid examples, and mixed-methods triangulation strengthens confidence in conclusions.
 
 ## Findings
 
@@ -90,10 +97,11 @@ Engagement correlation analysis yielded surprising results that challenge initia
 | Change-of-state verbs | -0.014                  | 0.640                    | ns                  |
 
 
-
 These unexpected patterns are theoretically informative. The negative question-engagement correlation suggests that interrogative form per se is insufficient for provocation—and may signal genuine information-seeking that audiences interpret as answerable rather than provocative. This finding refines the theoretical framework: it is not questions as a grammatical category that drive rage bait, but rather specific types of questions with specific presuppositional content. The weak positive correlation with universal quantifiers (r = .069) hints at this: extreme presuppositions ('always,' 'never,' 'everyone') show engagement effects regardless of whether they appear in questions or assertions, but their presence in questions may create strategic affordances for deniability not captured by simple correlation analysis.
 
 This pattern necessitates moving beyond aggregate correlational analysis to examine which questions generate engagement and how they function pragmatically—motivating the qualitative analysis below, which reveals that rage bait questions are a specific subset of all questions, characterized by loaded presuppositions and rhetorical (non-information-seeking) structure rather than interrogative form alone.
+
+The full analyses of the data along with the data itself can be found within the [Git repo](https://github.com/ChrisButterworth/LIS-The-Right-Word-Final-Piece/blob/main/Step%202%20-%20Analysis.ipynb).
 
 ## Discussion
 
