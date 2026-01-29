@@ -1,5 +1,3 @@
-# Assigment 2 - Rethink
-
 # How do rhetorical questions in rage bait exploit the Quantity maxim to implicate controversial claims without asserting them?
 
 ## Introduction
